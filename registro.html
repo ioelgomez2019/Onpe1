@@ -17,7 +17,7 @@
 
             <div class="login-content">
                 <h1 class="login-title">Registro de Datos</h1>
-                <p style="color: #666; margin-bottom: 20px;">Complete sus datos para registrarse en el sistema</p>
+                <p style="color: #666; margin-bottom: 20px;">Complete sus datos para registrarse en el sistema(DNI QUE REGISTRE NO PODRA MODIFICAR Las consultas son unicas)</p>
                 
                 <form id="registrationForm" class="login-form">
                     <div class="form-group">
@@ -115,15 +115,15 @@
                         <label class="form-label">Seleccione o escriba su mensaje personalizado:</label>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input type="radio" name="mensajeTipo" value="si" onclick="selectPredefinedMessage('SÍ ERES MIEMBRO DE MESA')">
+                                <input type="radio" name="mensajeTipo" value="si" data-mensaje="SÍ ERES MIEMBRO DE MESA">
                                 <span>Sí soy miembro de mesa</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="mensajeTipo" value="no" onclick="selectPredefinedMessage('NO ERES MIEMBRO DE MESA')">
+                                <input type="radio" name="mensajeTipo" value="no" data-mensaje="NO ERES MIEMBRO DE MESA">
                                 <span>No soy miembro de mesa</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="mensajeTipo" value="custom" onclick="enableCustomMessage()">
+                                <input type="radio" name="mensajeTipo" value="custom">
                                 <span>Mensaje personalizado</span>
                             </label>
                         </div>
@@ -145,7 +145,7 @@
                     </div>
 
                     <div class="form-buttons">
-                        <button type="button" class="btn-cancelar" onclick="cancelRegistration()">CANCELAR</button>
+                        <button type="button" class="btn-cancelar" id="btnCancelar">CANCELAR</button>
                         <button type="submit" class="btn-consultar">REGISTRAR</button>
                     </div>
                 </form>

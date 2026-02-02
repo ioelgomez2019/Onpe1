@@ -305,7 +305,7 @@ function init() {
     console.log('🚀 ONPE App iniciada');
     console.log('📄 Página actual:', currentPage);
     
-    if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbwHOKSsz6_dBZE6vqtaSAieuS43dAYkC3jSc_yTfkh4Zt34og5ZAjh3YtyApHoOYgo/exec') {
+    if (GOOGLE_SCRIPT_URL === 'TU_URL_DE_GOOGLE_SCRIPT_AQUI') {
         console.warn('⚠️ ADVERTENCIA: Debe configurar GOOGLE_SCRIPT_URL en app.js');
     } else {
         console.log('✅ Google Script URL configurada');
@@ -317,9 +317,13 @@ function init() {
     if (currentPage === 'index.html' || currentPage === '') {
         const form = document.getElementById('consultaForm');
         const dniInput = document.getElementById('dni');
+        const btnCancelarModal = document.getElementById('btnCancelarModal');
+        const btnRegistrarModal = document.getElementById('btnRegistrarModal');
         
         if (form) form.addEventListener('submit', handleFormSubmit);
         if (dniInput) dniInput.addEventListener('input', handleDNIInput);
+        if (btnCancelarModal) btnCancelarModal.addEventListener('click', closeModal);
+        if (btnRegistrarModal) btnRegistrarModal.addEventListener('click', goToRegistration);
         
         clearUserDataFromSession();
         console.log('✅ Index inicializado');
@@ -330,10 +334,25 @@ function init() {
         const registrationForm = document.getElementById('registrationForm');
         const regDniInput = document.getElementById('regDni');
         const regMesaInput = document.getElementById('regMesa');
+        const btnCancelar = document.getElementById('btnCancelar');
+        const radioButtons = document.querySelectorAll('input[name="mensajeTipo"]');
         
         if (registrationForm) registrationForm.addEventListener('submit', handleRegistrationSubmit);
         if (regDniInput) regDniInput.addEventListener('input', handleDNIInput);
         if (regMesaInput) regMesaInput.addEventListener('input', handleMesaInput);
+        if (btnCancelar) btnCancelar.addEventListener('click', cancelRegistration);
+        
+        // Event listeners para los radio buttons
+        radioButtons.forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.value === 'custom') {
+                    enableCustomMessage();
+                } else {
+                    const mensaje = this.getAttribute('data-mensaje');
+                    if (mensaje) selectPredefinedMessage(mensaje);
+                }
+            });
+        });
         
         const dniToRegister = sessionStorage.getItem('dniToRegister');
         if (dniToRegister && regDniInput) {
@@ -347,12 +366,15 @@ function init() {
     // CONSULTA.HTML - Página de resultados
     else if (currentPage === 'consulta.html') {
         const userData = getUserDataFromSession();
+        const btnSalir = document.getElementById('btnSalir');
         
         if (!userData) {
             alert('No se encontraron datos de consulta. Será redirigido a la página principal.');
             window.location.href = 'index.html';
             return;
         }
+        
+        if (btnSalir) btnSalir.addEventListener('click', goBack);
         
         showResults(userData);
         
