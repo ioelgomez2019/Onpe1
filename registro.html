@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONPE - Registro de Datos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <!-- Registration Page -->
+    <div id="registrationPage">
+        <div class="login-container">
+            <div class="login-header">
+                <img src="img/logo-eleccion.svg" alt="ONPE Elecciones Generales" class="logo-eleccion">
+            </div>
+
+            <div class="login-content">
+                <h1 class="login-title">Registro de Datos</h1>
+                <p style="color: #666; margin-bottom: 20px;">Complete sus datos para registrarse en el sistema</p>
+                
+                <form id="registrationForm" class="login-form">
+                    <div class="form-group">
+                        <label class="form-label" for="regDni">DNI:</label>
+                        <input 
+                            type="text" 
+                            id="regDni" 
+                            class="form-input" 
+                            placeholder="Número de DNI"
+                            maxlength="8"
+                            required
+                            readonly
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regNombres">Nombres:</label>
+                        <input 
+                            type="text" 
+                            id="regNombres" 
+                            class="form-input" 
+                            placeholder="Sus nombres"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regApellidoPaterno">Apellido Paterno:</label>
+                        <input 
+                            type="text" 
+                            id="regApellidoPaterno" 
+                            class="form-input" 
+                            placeholder="Apellido paterno"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regApellidoMaterno">Apellido Materno:</label>
+                        <input 
+                            type="text" 
+                            id="regApellidoMaterno" 
+                            class="form-input" 
+                            placeholder="Apellido materno"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regRegion">Región:</label>
+                        <input 
+                            type="text" 
+                            id="regRegion" 
+                            class="form-input" 
+                            placeholder="Región"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regProvincia">Provincia:</label>
+                        <input 
+                            type="text" 
+                            id="regProvincia" 
+                            class="form-input" 
+                            placeholder="Provincia"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regDistrito">Distrito:</label>
+                        <input 
+                            type="text" 
+                            id="regDistrito" 
+                            class="form-input" 
+                            placeholder="Distrito"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regMesa">Número de Mesa:</label>
+                        <input 
+                            type="text" 
+                            id="regMesa" 
+                            class="form-input" 
+                            placeholder="Número de mesa (6 dígitos)"
+                            maxlength="6"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Seleccione o escriba su mensaje personalizado:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="mensajeTipo" value="si" onclick="selectPredefinedMessage('SÍ ERES MIEMBRO DE MESA')">
+                                <span>Sí soy miembro de mesa</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="mensajeTipo" value="no" onclick="selectPredefinedMessage('NO ERES MIEMBRO DE MESA')">
+                                <span>No soy miembro de mesa</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="mensajeTipo" value="custom" onclick="enableCustomMessage()">
+                                <span>Mensaje personalizado</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="regMensaje">Mensaje que aparecerá en la consulta:</label>
+                        <input 
+                            type="text" 
+                            id="regMensaje" 
+                            class="form-input" 
+                            placeholder="Escriba su mensaje personalizado"
+                            maxlength="100"
+                            required
+                        >
+                        <small style="color: #666; font-size: 12px; margin-top: 5px; display: block;">
+                            Máximo 100 caracteres. Este mensaje aparecerá cuando consulte su DNI.
+                        </small>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="button" class="btn-cancelar" onclick="cancelRegistration()">CANCELAR</button>
+                        <button type="submit" class="btn-consultar">REGISTRAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="login-illustration">
+            <img src="img/Fondo.svg" alt="Ilustración referencial" class="illustration-img">
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-animation">
+            <div class="logo-burst" id="logoBurst">
+                <!-- Burst particles will be created by JavaScript -->
+            </div>
+            <div class="loading-text">Registrando...</div>
+        </div>
+    </div>
+
+    <script src="js/App.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+{
+    "71052981": {
+        "dni": "71052981",
+        "nombres": "JOEL SANTOS",
+        "apellidoPaterno": "GOMEZ",
+        "apellidoMaterno": "ALANOCA",
+        "region": "PUNO",
+        "provincia": "CHUCUITO",
+        "distrito": "ZEPITA",
+        "mesaNumero": "075295",
+        "esMiembro": false,
+        "miembros": [
+            {
+                "dni": "60283715",
+                "nombres": "LOLA MARITZA",
+                "apellidoPaterno": "GOMEZ",
+                "apellidoMaterno": "CACHI",
+                "cargo": "PRESIDENTE"
+            },
+            {
+                "dni": "71905198",
+                "nombres": "JAVIER",
+                "apellidoPaterno": "CRUZ",
+                "apellidoMaterno": "CASAS",
+                "cargo": "SECRETARIO"
+            },
+            {
+                "dni": "45223373",
+                "nombres": "ROGER",
+                "apellidoPaterno": "CALISAYA",
+                "apellidoMaterno": "LEQUELEQUE",
+                "cargo": "TERCER MIEMBRO"
+            }
+        ]
+    },
+    "12345678": {
+        "dni": "12345678",
+        "nombres": "SERGIO",
+        "apellidoPaterno": "CAMA",
+        "apellidoMaterno": "RAMOS",
+        "region": "LIMA",
+        "provincia": "LIMA",
+        "distrito": "MIRAFLORES",
+        "mesaNumero": "012345",
+        "esMiembro": true,
+        "miembros": [
+            {
+                "dni": "12345678",
+                "nombres": "MARIA ELENA",
+                "apellidoPaterno": "RODRIGUEZ",
+                "apellidoMaterno": "SILVA",
+                "cargo": "PRESIDENTE"
+            },
+            {
+                "dni": "87654321",
+                "nombres": "CARLOS ALBERTO",
+                "apellidoPaterno": "MENDOZA",
+                "apellidoMaterno": "TORRES",
+                "cargo": "SECRETARIO"
+            },
+            {
+                "dni": "11223344",
+                "nombres": "ANA LUCIA",
+                "apellidoPaterno": "VARGAS",
+                "apellidoMaterno": "CASTRO",
+                "cargo": "TERCER MIEMBRO"
+            }
+        ]
+    },
+    "98765432": {
+        "dni": "98765432",
+        "nombres": "JOSE ANTONIO",
+        "apellidoPaterno": "MARTINEZ",
+        "apellidoMaterno": "LOPEZ",
+        "region": "AREQUIPA",
+        "provincia": "AREQUIPA",
+        "distrito": "CAYMA",
+        "mesaNumero": "098765",
+        "esMiembro": false,
+        "miembros": [
+            {
+                "dni": "55667788",
+                "nombres": "PATRICIA",
+                "apellidoPaterno": "FLORES",
+                "apellidoMaterno": "DIAZ",
+                "cargo": "PRESIDENTE"
+            },
+            {
+                "dni": "99887766",
+                "nombres": "LUIS FERNANDO",
+                "apellidoPaterno": "QUISPE",
+                "apellidoMaterno": "MAMANI",
+                "cargo": "SECRETARIO"
+            },
+            {
+                "dni": "22334455",
+                "nombres": "ROSA MARIA",
+                "apellidoPaterno": "HUAMAN",
+                "apellidoMaterno": "CONDORI",
+                "cargo": "TERCER MIEMBRO"
+            }
+        ]
+    },
+    "45678912": {
+        "dni": "45678912",
+        "nombres": "CARMEN ROSA",
+        "apellidoPaterno": "GUTIERREZ",
+        "apellidoMaterno": "RAMIREZ",
+        "region": "CUSCO",
+        "provincia": "CUSCO",
+        "distrito": "WANCHAQ",
+        "mesaNumero": "045678",
+        "esMiembro": true,
+        "miembros": [
+            {
+                "dni": "45678912",
+                "nombres": "CARMEN ROSA",
+                "apellidoPaterno": "GUTIERREZ",
+                "apellidoMaterno": "RAMIREZ",
+                "cargo": "SECRETARIO"
+            },
+            {
+                "dni": "33445566",
+                "nombres": "PEDRO LUIS",
+                "apellidoPaterno": "SANCHEZ",
+                "apellidoMaterno": "VILLANUEVA",
+                "cargo": "PRESIDENTE"
+            },
+            {
+                "dni": "77889900",
+                "nombres": "JULIA ISABEL",
+                "apellidoPaterno": "ROJAS",
+                "apellidoMaterno": "PINTO",
+                "cargo": "TERCER MIEMBRO"
+            }
+        ]
+    },
+    "47224518": {
+    "dni": "47224518",
+    "nombres": "SERGIO",
+    "apellidoPaterno": "CAMA",
+    "apellidoMaterno": "RAMOS",
+    "region": "PUNO",
+    "provincia": "PUNO",
+    "distrito": "PICHACANI",
+    "mesaNumero": "012345",
+    "esMiembro": true,
+    "miembros": [
+        {
+            "dni": "80114131",
+            "nombres": "MARCELINO",
+            "apellidoPaterno": "JAHUIRA",
+            "apellidoMaterno": "BARRIENTOS",
+            "cargo": "PRESIDENTE"
+        },
+        {
+            "dni": "70404849",
+            "nombres": "YORDYN",
+            "apellidoPaterno": "FLORES",
+            "apellidoMaterno": "RODRIGUEZ",
+            "cargo": "SECRETARIO"
+        },
+        {
+            "dni": "01307163",
+            "nombres": "DIONICIO",
+            "apellidoPaterno": "COILA",
+            "apellidoMaterno": "MENDOZA",
+            "cargo": "TERCER MIEMBRO"
+        },
+        {
+            "dni": "73746557",
+            "nombres": "SULEMA",
+            "apellidoPaterno": "CHURA",
+            "apellidoMaterno": "FLORES",
+            "cargo": "PRIMER SUPLENTE"
+        },
+        {
+            "dni": "44794638",
+            "nombres": "SONIA ISIDORA",
+            "apellidoPaterno": "FLORES",
+            "apellidoMaterno": "RODRIGUEZ",
+            "cargo": "SEGUNDO SUPLENTE"
+        }
+    ]
+}
+
+}
